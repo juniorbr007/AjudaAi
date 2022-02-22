@@ -8,13 +8,18 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 // Componentes importados
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatSidenavModule} from "@angular/material/sidenav";
+import {MatCardModule} from "@angular/material/card";
 import {MatListModule} from "@angular/material/list";
+import {MatDialogModule} from '@angular/material/dialog';
+import {MatButtonModule} from '@angular/material/button';
+
+
 
 // components da navegação do site
 import { HeaderComponent } from './components/template/header/header.component';
 import { NavComponent } from './components/template/nav/nav.component'; 
 import { FooterComponent } from './components/template/footer/footer.component';
-import { HomeComponent } from './views/home/home.component';
+import { HomeComponent, DialogContentExampleDialog } from './views/home/home.component';
 
 
 @NgModule({
@@ -23,7 +28,8 @@ import { HomeComponent } from './views/home/home.component';
     HeaderComponent,
     FooterComponent,
     NavComponent,
-    HomeComponent
+    HomeComponent,
+    DialogContentExampleDialog
   ],
   imports: [
     BrowserModule,
@@ -31,7 +37,10 @@ import { HomeComponent } from './views/home/home.component';
     BrowserAnimationsModule,
     MatToolbarModule,
     MatSidenavModule,
-    MatListModule
+    MatCardModule,
+    MatListModule,
+    MatDialogModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
