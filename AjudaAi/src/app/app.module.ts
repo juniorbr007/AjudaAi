@@ -21,6 +21,7 @@ import { NavComponent } from './components/template/nav/nav.component';
 import { FooterComponent } from './components/template/footer/footer.component';
 import { HomeComponent, DialogContentExampleDialog } from './views/home/home.component';
 import { AuxiliosComponent } from './views/auxilios/auxilios.component';
+import { ProjetosComponent } from './views/projetos/projetos.component';
 
 
 @NgModule({
@@ -31,7 +32,8 @@ import { AuxiliosComponent } from './views/auxilios/auxilios.component';
     NavComponent,
     HomeComponent,
     DialogContentExampleDialog,
-    AuxiliosComponent
+    AuxiliosComponent,
+    ProjetosComponent
   ],
   imports: [
     BrowserModule,
