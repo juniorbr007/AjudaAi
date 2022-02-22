@@ -14,6 +14,7 @@ import {MatListModule} from "@angular/material/list";
 import { HeaderComponent } from './components/template/header/header.component';
 import { NavComponent } from './components/template/nav/nav.component'; 
 import { FooterComponent } from './components/template/footer/footer.component';
+import { HomeComponent } from './views/home/home.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { FooterComponent } from './components/template/footer/footer.component';
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    NavComponent
+    NavComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
