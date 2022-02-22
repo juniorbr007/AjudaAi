@@ -1,7 +1,7 @@
 <mat-sidenav-container class="container">
     <mat-sidenav class="sidenav" mode="side" opened
         fixedInViewport="true" fixedTopGap="64">
-        <mat-nav-list class="nav-list">
+        <mat-nav-list class="nav-list" routerLink="/">
             <!-- Menu da navegação-->
             <a mat-list-item>
                 <i class="material-icons">
@@ -10,7 +10,7 @@
                 Início
             </a>
 
-            <a mat-list-item>
+            <a mat-list-item routerLink="/auxilios">
                 <i class="material-icons">
                     savings
                 </i>
@@ -28,6 +28,6 @@
     </mat-sidenav>
     <mat-sidenav-content class="content">
         <!-- Link para o APP HOME do conteudo -->
-        <app-home></app-home>
+        <router-outlet></router-outlet>
     </mat-sidenav-content>
 </mat-sidenav-container>

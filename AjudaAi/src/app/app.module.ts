@@ -20,6 +20,7 @@ import { HeaderComponent } from './components/template/header/header.component';
 import { NavComponent } from './components/template/nav/nav.component'; 
 import { FooterComponent } from './components/template/footer/footer.component';
 import { HomeComponent, DialogContentExampleDialog } from './views/home/home.component';
+import { AuxiliosComponent } from './views/auxilios/auxilios.component';
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import { HomeComponent, DialogContentExampleDialog } from './views/home/home.com
     FooterComponent,
     NavComponent,
     HomeComponent,
-    DialogContentExampleDialog
+    DialogContentExampleDialog,
+    AuxiliosComponent
   ],
   imports: [
     BrowserModule,
