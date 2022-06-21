@@ -1,0 +1,23 @@
+table {
+    width: 100%;
+  }
+  .example-spacer {
+    flex: 1 1 auto;
+  }
+  .example-card {
+    max-width: 400px;
+  }
+  .mat-grid-tile {
+    background: rgb(255, 255, 255);
+  }
+  .mat-card{
+    background: rgb(67, 48, 233);
+    color: rgb(255, 255, 255);
+  }
+  .mat-card2{
+    background: rgb(132, 109, 116);
+    color: rgb(255, 255, 255);
+  }
+  .mat-card-subtitle{
+    color: rgb(255, 255, 255);
+  }
