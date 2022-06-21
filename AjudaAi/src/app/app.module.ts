@@ -12,6 +12,9 @@ import {MatCardModule} from "@angular/material/card";
 import {MatListModule} from "@angular/material/list";
 import {MatDialogModule} from '@angular/material/dialog';
 import {MatButtonModule} from '@angular/material/button';
+import {MatTableModule} from '@angular/material/table';
+import {MatGridListModule} from '@angular/material/grid-list';
+
 
 
 
@@ -44,7 +47,10 @@ import { ProjetosComponent } from './views/projetos/projetos.component';
     MatCardModule,
     MatListModule,
     MatDialogModule,
-    MatButtonModule
+    MatButtonModule,
+    MatTableModule,
+    MatGridListModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
