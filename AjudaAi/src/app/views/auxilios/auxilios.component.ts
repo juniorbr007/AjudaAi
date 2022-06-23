@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import {MatDialog} from '@angular/material/dialog';
 
-import { AppModule } from 'src/app/app.module';
 
 
 export interface PeriodicElement {
@@ -30,7 +30,9 @@ const ELEMENT_DATA: PeriodicElement[] = [
   templateUrl: './auxilios.component.html',
   styleUrls: ['./auxilios.component.scss']
 })
-export class AuxiliosComponent implements AppModule  {
+export class AuxiliosComponent {
+  panelOpenState = false;
+
   displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
   dataSource = ELEMENT_DATA;
 
@@ -40,6 +42,22 @@ export class AuxiliosComponent implements AppModule  {
   transporteSub= `Destina-se aos estudantes que necessitam fazer o percurso para o campus sede do curso de graduação em transporte coletivo.`;
   preescolarSub= `Destina-se aos estudantes para auxiliar nas despesas pré-escolares de filhos ou dependentes com até 06 anos de idade incomplestos.`;
   crecheSub= `Designa-se aos estudantes que têm filhos de seis meses a três anos e onze meses de idade.`;
-  constructor() { }
+
+
+  constructor(public dialog: MatDialog) { }
+
+
+ openDialog() {
+    
+    this.dialog.open(DialogDocumentacao);
+
+  }
+}
+
+@Component({
+  selector: '././Moradia/documentos-moradia',
+  templateUrl: '././Moradia/documentos-moradia.html',
+})
+export class DialogDocumentacao {
 
 }

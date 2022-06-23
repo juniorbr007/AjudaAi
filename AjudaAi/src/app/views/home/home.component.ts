@@ -12,7 +12,7 @@ export class HomeComponent  {
   constructor(public dialog: MatDialog) {}
   
   openDialog(){
-    const dialogRef = this.dialog.open(DialogContentExampleDialog);
+    const dialogRef = this.dialog.open(DialogInfo);
     
     dialogRef.afterClosed().subscribe(result => {
       console.log(`Dialog result: ${result}`);
@@ -23,6 +23,6 @@ export class HomeComponent  {
   selector: 'dialog-content-example-dialog',
   templateUrl: 'dialog-content-example-dialog.html',
 })
-export class DialogContentExampleDialog{}
+export class DialogInfo{}
 
 
